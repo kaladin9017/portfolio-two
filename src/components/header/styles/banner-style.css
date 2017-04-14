@@ -13,6 +13,10 @@ svg.intro {
     position: initial;
     max-width: initial;
   }
+  .ui.labeled.icon.menu {
+    text-align: center;
+    margin: 4px;
+  }
 }
 
 svg.intro .text {
