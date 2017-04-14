@@ -1,6 +1,6 @@
 .project-display {
   height: 100vh;
-  color: #f6bdfa;
+  color: #252627;
   overflow-y: auto;
 
 }
@@ -10,17 +10,17 @@
 }
 
 .project-top a{
-  color: #f6bdfa;
+  color: #252627;
 }
 
 .project-middle {
 }
 
 .project-bottom {
-  width: 425px;
-  height: 300px;
-  background-color: #667482;
-  image-rendering: -webkit-optimize-contrast;
+  width: 80%;
+  height: 200px;
+  /*background-color: #667482;*/
+  /*image-rendering: -webkit-optimize-contrast;*/
 }
 
 
@@ -31,7 +31,7 @@
 .thumb {
   width: 400px;
   height: 300px;
-  margin: 70px auto;
+  margin: 50px auto;
   perspective: 1000px;
 }
 .thumb a {
@@ -65,7 +65,7 @@
 .thumb a span {
   padding-top: 8px;
   cursor: pointer;
-  color: #f6bdfa;
+  color: #FFF;
   text-transform: uppercase;
   position: absolute;
   top: 100%;
@@ -99,6 +99,40 @@
 }
 
 .thumb a img {
-  width: 400px;
-  height: 300px;
+  width: 328px;
+  height: 320px;
+}
+
+.thumb-span {
+  letter-spacing: 0;
+}
+.thumb-span:after,
+.thumb-span:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.thumb-span:hover:after,
+.thumb-span:hover:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: #FFF;
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.thumb-span:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
 }

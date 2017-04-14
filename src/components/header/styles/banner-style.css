@@ -1,12 +1,19 @@
 svg.intro {
   max-width: 300px;
   position: absolute;
-
+  font-weight: bold;
 }
 /*Media Query for phones
  delete  position
  and align center
 */
+
+@media (max-width: 600px) {
+  svg.intro {
+    position: initial;
+    max-width: initial;
+  }
+}
 
 svg.intro .text {
   display: none;
@@ -37,7 +44,7 @@ svg.intro.go .text-stroke:nth-child(3) {
           animation-delay: .9s;
 }
 svg.intro.go .text-stroke-2 {
-  stroke: #f6bdfa;
+  stroke: #252627;
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
@@ -64,5 +71,22 @@ svg.intro.go .text-stroke:nth-child(6) {
 
 
 .header-icons {
-  color: #f6bdfa;
+  color: #252627;
+}
+
+.header-icons span {
+  color: #252627;
+}
+
+#root > div > div.App-header > div > div > div > a:nth-child(1) > a > span {
+  color: #252627;
+}
+#root > div > div.App-header > div > div > div > a:nth-child(2) > a > span {
+  color: #252627;
+}
+#root > div > div.App-header > div > div > div > a:nth-child(3) > a > span {
+  color: #252627;
+}
+#root > div > div.App-header > div > div > div > a:nth-child(4) > a > span {
+  color: #252627;
 }

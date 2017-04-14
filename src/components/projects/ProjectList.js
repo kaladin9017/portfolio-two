@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Grid, Image, Header } from 'semantic-ui-react'
+import { Grid, Divider } from 'semantic-ui-react'
 import * as actions from '../../redux/actions';
 import ProjectDisplay from './ProjectDisplay';
 
@@ -16,8 +16,8 @@ class ProjectList extends Component {
       this.props.projects.map(project => (
           <div className="thumb" key={project.name}>
             <a>
-              <img src={project.image}  />
-              <span onClick={this.handleSelect.bind(this, project)} >{project.name}</span>
+              <img src={project.image}  alt={project.name} className="project-image"/>
+              <span className="thumb-span" onClick={this.handleSelect.bind(this, project)} >{project.name}</span>
             </a>
           </div>
       )
@@ -30,13 +30,15 @@ class ProjectList extends Component {
       "paddingTop": "8px"
     }
     return (
-      <center style={styles}>
+      <div style={styles}>
         <ProjectDisplay project={this.props.selectedProject} visible={this.state.visible} changeVisible={this.toggleVisibility.bind(this)}/>
+        <Divider/>
         <h2>Projects</h2>
+        <Divider/>
         <Grid relaxed columns={3}>
           {this.renderProjects()}
         </Grid>
-      </center>
+      </div>
     )
   }
 }

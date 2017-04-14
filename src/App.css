@@ -1,13 +1,25 @@
 .App {
   text-align: center;
-  color: #f6bdfa !important;
+  background-color: #FFF9FB;
+  color: #252627 !important;
 }
 
 .App-header {
   display: flex;
   flex-direction: column;
-  background-color: #474973;
+  background-color: #4B88A2;
   height: 180px;
   padding: 20px;
   color: white;
+}
+
+
+#root > div > div:nth-child(2) > div {
+  /*text-shadow: 4px 4px 12px #f6bdfa;*/
+
+}
+
+#root > div > div.projects > div > h2 {
+  /*text-shadow: 4px 4px 12px #f6bdfa;*/
+
 }

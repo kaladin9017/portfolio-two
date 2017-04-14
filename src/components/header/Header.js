@@ -7,30 +7,30 @@ class Header extends Component {
   }
   render() {
     return (
-      <Menu icon="labeled" secondary inverted>
+      <Menu icon="labeled" secondary>
         <Menu.Menu position='right'>
           <a href="https://twitter.com/sanchoc15" target="_blank">
             <Menu.Item name='twitter' onClick={this.handleItemClick}>
               <Icon className="header-icons" name='twitter' />
-              Twitter
+              <span className="icon-label">Twitter</span>
             </Menu.Item>
           </a>
           <a href="github.com/kaladin9017" target="_blank">
             <Menu.Item name='github' onClick={this.handleItemClick}>
               <Icon className="header-icons" name='github' />
-              GitHub
+              <span  className="icon-label">GitHub</span>
             </Menu.Item>
           </a>
           <a href="https://www.linkedin.com/in/christopher-sancho/" target="_blank">
             <Menu.Item name='linkedin square' onClick={this.handleItemClick}>
               <Icon className="header-icons" name='linkedin square' />
-              LinkedIn
+              <span  className="icon-label">LinkedIn</span>
             </Menu.Item>
           </a>
           <a href="https://resume.creddle.io/resume/ei3voztuu8y" target="_blank">
             <Menu.Item name='student' onClick={this.handleItemClick}>
               <Icon className="header-icons" name='student' />
-              Resume
+              <span  className="icon-label">Resume</span>
             </Menu.Item>
           </a>
         </Menu.Menu>
