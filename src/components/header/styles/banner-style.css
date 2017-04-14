@@ -1,0 +1,68 @@
+svg.intro {
+  max-width: 300px;
+  position: absolute;
+
+}
+/*Media Query for phones
+ delete  position
+ and align center
+*/
+
+svg.intro .text {
+  display: none;
+}
+svg.intro.go .text {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: block;
+}
+svg.intro.go .text-stroke {
+  fill: none;
+  stroke: #51256f;
+  stroke-width: 5.8px;
+  stroke-dashoffset: -900;
+  stroke-dasharray: 900;
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+  -webkit-animation: dash 2.5s ease-in-out forwards;
+          animation: dash 2.5s ease-in-out forwards;
+}
+svg.intro.go .text-stroke:nth-child(2) {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+svg.intro.go .text-stroke:nth-child(3) {
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
+}
+svg.intro.go .text-stroke-2 {
+  stroke: #f6bdfa;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+svg.intro.go .text-stroke:nth-child(5) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+svg.intro.go .text-stroke:nth-child(6) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+@-webkit-keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.header-icons {
+  color: #f6bdfa;
+}

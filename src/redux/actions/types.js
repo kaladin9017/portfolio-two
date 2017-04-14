@@ -1,0 +1,2 @@
+export const GET_PROJECT_INFO = "GET_PROJECT_INFO";
+export const SELECT_PROJECT = "SELECT_PROJECT";
