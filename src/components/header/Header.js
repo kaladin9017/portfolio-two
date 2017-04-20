@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { Menu, Icon } from 'semantic-ui-react';
 
 class Header extends Component {
-  handleItemClick() {
-      return
-  }
   render() {
     return (
       <Menu icon="labeled" secondary>
@@ -15,7 +12,7 @@ class Header extends Component {
               <span className="icon-label">Twitter</span>
             </Menu.Item>
           </a>
-          <a href="github.com/kaladin9017" target="_blank">
+          <a href="https://github.com/kaladin9017" target="_blank">
             <Menu.Item name='github' onClick={this.handleItemClick}>
               <Icon className="header-icons" name='github' />
               <span  className="icon-label">GitHub</span>

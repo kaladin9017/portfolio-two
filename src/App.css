@@ -24,3 +24,16 @@
   /*text-shadow: 4px 4px 12px #f6bdfa;*/
 
 }
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#root > div > div:nth-child(2) > div > div > div.avatar.about-me-img > img {
+  border-radius: 100%;
+}
+.about-me-text {
+  padding-top: 24px;
+  align-items: center;
+}
